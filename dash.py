@@ -11,28 +11,28 @@ st.set_page_config(layout="wide")
 st.title('Dashboard de Imóveis para Alugar')
 
 # Fundo da página
-page_bg = '''
-    <style>
-    .stApp {
-        background-color: #f4f4f9;
-    }
-    .card {
-        background-color: white;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
-    }
-    .metric-card {
-        background-color: white;
-        padding: 10px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
-        margin-bottom: 20px;
-    }
-    </style>
-'''
-st.markdown(page_bg, unsafe_allow_html=True)  # Define o fundo da página com cor clara e estética limpa
+#page_bg = '''
+    #<style>
+    #.stApp {
+        #background-color: #f4f4f9;
+    #}
+    #.card {
+        #background-color: white;
+       # padding: 20px;
+       # margin-bottom: 20px;
+       # border-radius: 10px;
+       # box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+   # }
+   # .metric-card {
+    #    background-color: white;
+    #    padding: 10px;
+    #    border-radius: 10px;
+    #    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+     #   margin-bottom: 20px;
+  #  }
+ #   </style>
+#'''
+#st.markdown(page_bg, unsafe_allow_html=True)  # Define o fundo da página com cor clara e estética limpa
 
 # Paleta de cores para consistência nos gráficos
 colors = px.colors.qualitative.Plotly  # Uso das cores padrão do Plotly para consistência visual
