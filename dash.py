@@ -134,7 +134,7 @@ with col2:
     # Cartão 2: Valor médio do aluguel
     if not filtered_data.empty:
         valor_médio_aluguel = round(filtered_data['rent amount (R$)'].mean())
-        st.metric(label="Preço médio aluguel", value=valor_formatado)
+        st.metric(label="Preço médio aluguel", value= valor_médio_aluguel)
     else:
         st.write("Selecione uma cidade para análise.")
 
