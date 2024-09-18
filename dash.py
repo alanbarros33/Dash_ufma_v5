@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 import plotly.express as px
-import locale
+
 
 # Lê os dados do CSV
 data = pd.read_csv('houses_to_rent_v2.csv')
@@ -134,8 +134,6 @@ with col2:
     # Cartão 2: Valor médio do aluguel
     if not filtered_data.empty:
         valor_médio_aluguel = round(filtered_data['rent amount (R$)'].mean())
-        locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
-        valor_formatado = locale.currency(int(valor_médio_aluguel), grouping=True, symbol='R$')
         st.metric(label="Preço médio aluguel", value=valor_formatado)
     else:
         st.write("Selecione uma cidade para análise.")
